@@ -1,0 +1,167 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1c1c1c;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff3333;
+}
+
+.navbar h1 {
+    color: #ff3333;
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff3333;
+}
+
+/* Home Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #111111, #303030);
+}
+
+.hero h2 {
+    color: #ff3333;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.join-btn {
+    display: inline-block;
+    background-color: #ff3333;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.join-btn:hover {
+    background-color: #cc0000;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2,
+.membership h2,
+.contact h2 {
+    color: #ff3333;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Membership Section */
+.membership {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.plan-card {
+    background-color: #222222;
+    border: 1px solid #ff3333;
+    border-radius: 10px;
+    padding: 35px 25px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px rgba(255, 51, 51, 0.3);
+}
+
+.plan-card h3 {
+    color: #ff3333;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    color: #cccccc;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+}
